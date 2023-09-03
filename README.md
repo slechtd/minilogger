@@ -67,3 +67,38 @@ Use flushReport() to generate the file in the specified directory. Using TestNG 
 <pre>
 MiniLogger.flushReport();
 </pre>
+
+### Example output
+
+<pre>
+{
+  "info": [
+    {"Environment": "DEV"},
+    {"Browser": "chrome"},
+    {"Date": "03-09-2023_15-18-28-940"}
+  ],
+  "testCases": [
+    {
+      "name": "ValidLoginAndLogoutTestCase",
+      "status": "PASSED",
+      "screenshotPaths": [],
+      "logs": [
+        {"message": "Starting ValidLoginAndLogoutTestCase", "timestamp": "time_here"},
+        {"message": "HomePage loaded successfully.", "timestamp": "time_here"},
+        // ...additional logs
+      ]
+    },
+    {
+      "name": "InvalidLoginTestCase",
+      "status": "PASSED",
+      "screenshotPaths": [],
+      "logs": [
+        {"message": "Starting InvalidLoginTestCase.", "timestamp": "time_here"},
+        {"message": "HomePage loaded successfully.", "timestamp": "time_here"},
+        // ...additional logs
+      ]
+    }
+    // ...additional test cases
+  ]
+}
+</pre>
